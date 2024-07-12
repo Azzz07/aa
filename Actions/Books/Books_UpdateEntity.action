@@ -1,0 +1,19 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Books",
+        "Service": "/aa/Services/Au.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "ID": "#Control:ID/#Value",
+        "title": "#Control:title/#Value",
+        "stock": "#Control:stock/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/aa/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/aa/Actions/UpdateEntityFailureMessage.action"
+}
